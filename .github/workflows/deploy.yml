@@ -29,6 +29,8 @@ jobs:
       # Build React application
       - name: Build
         run: npm run build
+        env:
+         CI: false
 
       # Deploy to remote server
       - name: Deploy
